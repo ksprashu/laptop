@@ -1,0 +1,15 @@
+mkdir -p ~/Code/git
+mkdir -p ~/Code/gitkoo
+cd ~/Code/git
+git clone https://github.com/zsh-users/antigen.git
+
+ln -s ~/Code/gitkoo/laptop/powerup.sh powerup.sh
+ln -s ~/Code/gitkoo/laptop/mac mac
+ln -s ~/Code/gitkoo/laptop/.laptop.local .laptop.local
+chmod a+x 
+
+cd ~/Code/git
+git clone https://github.com/powerline/fonts.git
+cd fonts
+chmod a+x install.sh
+./install.sh

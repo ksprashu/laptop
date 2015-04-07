@@ -189,6 +189,10 @@ if [ -f "$HOME/.laptop.local" ]; then
   . "$HOME/.laptop.local"
 fi
 
+if [ -f "$HOME/setup-antigen.sh" ]; then
+  . "$HOME/setup-antigen.sh"
+fi
+
 append_to_file "$HOME/.rvmrc" 'rvm_auto_reload_flag=2'
 
 if [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then

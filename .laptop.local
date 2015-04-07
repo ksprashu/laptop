@@ -1,5 +1,8 @@
 #!/bin/sh
 
+brew_install_or_upgrade 'autojump'
+brew_install_or_upgrade 'tree'
+
 brew_cask_install 'firefox'
 brew_cask_install 'google-chrome'
 
@@ -9,6 +12,6 @@ brew_cask_install 'iterm2'
 
 brew_cask_install 'dropbox'
 brew_cask_install 'evernote'
-
-
-
+brew_cask_install 'node'
+brew_cask_install 'skype'
+brew_cask_install 'freemind'
